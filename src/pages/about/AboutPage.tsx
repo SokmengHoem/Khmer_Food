@@ -1,6 +1,6 @@
 import Carousel from "../../components/Templates/Carousel";
 import SimpleTastesBetter from '../../components/Molecules/SimpleTastesBetter';
-import React from "react";
+import OnlyTheGoodStuff from "../../components/Molecules/GoodStuff";
 
 const sliders: string[] = [
   'images/slide_Carousel1.png',
@@ -21,6 +21,9 @@ export default function AboutPage({ }: Props) {
             <Carousel slides={sliders} autoSlide={true} autoSlideInterval={3000} />
           </div>
         }
+      </div>
+      <div>
+        <OnlyTheGoodStuff/>
       </div>
     </div>
   )
