@@ -5,12 +5,34 @@ import { MdOutlineExpandCircleDown } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/atoms/Button";
 import TitleWithIcon from "../../components/Molecules/TitleWithIcon";
-import { compareA, compareB } from "../../data/myData";
+import { RealWorldType, compareA, compareB, reviews } from "../../data/myData";
+import { CgChevronRight } from "react-icons/cg";
+import { useState } from "react";
 
 export default function HomePage() {
   const navigate = useNavigate();
   const handleClick = () => {
     navigate("/food");
+  };
+  const [visibleReviews, setVisibleReviews] = useState<RealWorldType[]>(
+    reviews.slice(0, 3)
+  );
+  const [currentIndex, setCurrentIndex] = useState<number>(3);
+  const [isAnimating, setIsAnimating] = useState<boolean>(false);
+
+  const loadMoreReviews = () => {
+    setIsAnimating(true);
+    setTimeout(() => {
+      setIsAnimating(false);
+      const nextIndex = (currentIndex + 3) % reviews.length;
+      const newReviews = reviews.slice(nextIndex, nextIndex + 3);
+      setVisibleReviews(
+        newReviews.length === 3
+          ? newReviews
+          : [...newReviews, ...reviews.slice(0, 3 - newReviews.length)]
+      );
+      setCurrentIndex(nextIndex);
+    }, 500); // Animation duration in milliseconds
   };
   return (
     <>
@@ -136,34 +158,116 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        {/* //sticky  */}
         <div className="relative">
-        <div className="sticky top-0 h-screen  flex justify-center items-center">
-            <div>
-                <h1 className="text-4xl">First section Scroll</h1>
-            <p className="text-2xl">Page scroll down</p>
+          <div className="sticky top-0 h-screen  flex justify-center  items-center gap-[50%]">
+            <div className=" flex flex-col gap-9">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight sm:leading-tight md:leading-tight lg:leading-[70px] text-gray-700">
+                Prahok Ktiss
+              </h1>
+              <div className="bg-[#920E07] h-1 w-16 rounded-full"></div>
+              <p className=" w-96 text-xl">
+                Mouthwatering flavors to take your BBQ to the next level of
+                delicious perfection.
+              </p>
+              <div>
+                <Button
+                  variant="myWeb"
+                  className=" hover:bg-white hover:border-2 hover:text-[#920E07] hover:border-[#920E07]"
+                >
+                  View All
+                </Button>
+              </div>
             </div>
-        </div>
-        <div className="sticky top-0 h-screen  flex justify-center items-center">
-            <div>
-                <h1 className="text-4xl">Second section Scroll</h1>
-            <p className="text-2xl">Page scroll down</p>
+            <div className="">
+              <div className="w-96 h-96 absolute top-40 right-20 rounded-full bg-red-600"></div>
+              <div className=" w-[700px] absolute top-0 right-6">
+                <img src="images/homeImg7.png" alt="" />
+              </div>
             </div>
+          </div>
         </div>
-
-        <div className="sticky top-0 h-screen flex justify-center items-center">
-            <div>
-                <h1 className="text-4xl">Third section Scroll</h1>
-            <p className="text-2xl">Page scroll down</p>
+        <div className=" w-full bg-[#920E07] h-auto">
+          <div className="w-[82%] mx-auto h-[56vh] flex flex-col items-center gap-6 py-9">
+            <h1 className=" text-4xl text-white font-bold">Where to Buy</h1>
+            <div className="bg-[#f4f733] h-1 w-16 rounded-full"></div>
+            <div className=" flex items-center mt-6">
+              <div className="w-72 border-r-2  px-10 ">
+                <img src="images/homeImg5.png" className=" w-full" alt="" />
+              </div>
+              <div className="w-72 border-r-2 py-9  px-10 ">
+                <img src="images/homeImg6.png" className=" w-full" alt="" />
+              </div>
+              <div className="w-72 border-r-2 py-5  px-10 ">
+                <img src="images/homeImg8.png" className=" w-full" alt="" />
+              </div>
+              <div className="w-72 border-r-2 py-8  px-10 ">
+                <img src="images/homeImg9.png" className=" w-full" alt="" />
+              </div>
             </div>
+            <Button
+              variant="myWeb"
+              className=" text-[#920E07] mt-4 border-2 border-white"
+            >
+              Find Other Shop
+            </Button>
+          </div>
         </div>
-
-        <div className="sticky top-0 h-screen  flex justify-center items-center">
-            <div>
-                <h1 className="text-4xl">Fourth section Scroll</h1>
-            <p className="text-2xl">Page scroll down</p>
+        <div className="w-full h-auto">
+          <div className="relative w-[82%] mx-auto h-auto flex flex-col items-center gap-6 py-9 mb-10">
+            <h1 className="text-5xl text-gray-800 font-bold">
+              Real Words from Real Customers
+            </h1>
+            <div className=" relative bg-[#920E07] h-1 w-16 rounded-full"></div>
+            <div className="w-[82%] overflow-hidden h-auto flex flex-row gap-10">
+              <div
+                className={`w-[100%] flex flex-row gap-24 p-9 transform transition-transform ${
+                  isAnimating ? "translate-x-full" : "translate-x-0"
+                }`}
+              >
+                {visibleReviews.map((review) => (
+                  <div key={review.id}>
+                    <div className=" w-6">
+                      <img src={review.img} alt="" className="w-full" />
+                    </div>
+                    <h4 className="text-2xl font-bold mt-5">{review.text}</h4>
+                    <p className="text-gray-400 mt-5">{review.author}</p>
+                  </div>
+                ))}
+              </div>
+              <div
+                onClick={loadMoreReviews}
+                className="absolute bg-[#920E07] px-2 py-2 rounded-full -right-6 top-56 text-white cursor-pointer"
+              >
+                <CgChevronRight size={40} />
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+        <div className=" w-full bg-[#fdfaf2] h-auto">
+          <div className="w-[82%] mx-auto h-auto flex flex-col items-center gap-6 py-9">
+            <h1 className=" text-4xl text-gray-800 font-bold">Let's Get Social!</h1>
+            <div className="bg-[#920E07] h-2 w-16 rounded-full"></div>
+            <div className=" flex items-center gap-5">
+              <div className="w-72 ">
+                <img src="images/homeImg11.jpg" className=" w-full rounded-lg" alt="" />
+              </div>
+              <div className="w-72 ">
+                <img src="images/homeImg11.jpg" className=" w-full rounded-lg" alt="" />
+              </div>
+              <div className="w-72 ">
+                <img src="images/homeImg11.jpg" className=" w-full rounded-lg" alt="" />
+              </div>
+              
+            </div>
+            <Button
+              variant="myWeb"
+              className=" text-[#920E07] mt-4 border-2 border-white"
+            >
+              See More Posts
+            </Button>
+          </div>
+        </div>
       </main>
     </>
   );

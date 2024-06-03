@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.transform {
+    transition-property: transform;
+  }
+  
+  .transition-transform {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+  
+  .translate-x-0 {
+    transform: translateX(0);
+  }
+  
+  .translate-x-full {
+    transform: translateX(100%);
+  }
+  
