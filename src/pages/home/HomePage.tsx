@@ -168,14 +168,4 @@ export default function HomePage() {
     </>
   );
 }
-// const sliders: string[] = [
-//   'images/slide1.jpg',
-//   'images/slide2.jpg',
-//   'images/slide3.jpg'
-// ];
-//for sliders
-{
-  /* <div className="max-w-lg">
-        <Carousel slides={sliders} autoSlide={true} autoSlideInterval={1000}/>
-      </div> */
-}
+
