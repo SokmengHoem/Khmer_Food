@@ -9,6 +9,8 @@ import FavoritePage from './pages/fav/FavoritePage'
 import AddToCard from './pages/addCard/AddToCard'
 import LoginPage from './pages/auth/LoginPage'
 import Register from './pages/auth/Register'
+import FAQPage from './pages/faq/FAQPage'
+import BlogPage from './pages/blog/BlogPage'
 
 function App() {
  
@@ -24,6 +26,8 @@ function App() {
           <Route path="contact" element={<ContactPage/>} />
           <Route path="favorite" element={<FavoritePage/>}/>
           <Route path="add-card" element={<AddToCard/>}/>
+          <Route path="faq" element={<FAQPage />} />
+          <Route path="blog" element={<BlogPage />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<Register />} />
          </Route>

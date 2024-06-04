@@ -58,6 +58,18 @@ const Layout: React.FC = () => {
               About
             </button>
             <button
+              className={`${isActive('/faq')} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+              onClick={() => onClickLinkPage('/faq')}
+            >
+              FAQ
+            </button>
+            <button
+              className={`${isActive('/blog')} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+              onClick={() => onClickLinkPage('/blog')}
+            >
+              Blog
+            </button>
+            <button
               className={`${isActive('/contact')} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
               onClick={() => onClickLinkPage('/contact')}
             >
