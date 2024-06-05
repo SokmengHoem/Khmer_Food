@@ -30,6 +30,7 @@ function App() {
           <Route path="blog" element={<BlogPage />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<Register />} />
+          <Route path="food-detail" element={<FoodDetails />} />
          </Route>
         </Routes>
       </BrowserRouter>

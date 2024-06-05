@@ -7,10 +7,10 @@ export const FoodGallery: React.FC = () => {
     const [images, setImages] = useState<string[]>([]);
     const handleSeeMorePost = () => {
         setImages([
-            "images/relate_product1.png",
-            "images/relate_product2.png",
-            "images/relate_product3.png",
-            "images/relate_product4.png",
+            "images/aboutPage/relate_product1.png",
+            "images/aboutPage/relate_product2.png",
+            "images/aboutPage/relate_product3.png",
+            "images/aboutPage/relate_product4.png",
         ]);
     };
 
@@ -21,22 +21,22 @@ export const FoodGallery: React.FC = () => {
             <div className="bg-red-600 h-1 w-16 mx-auto mb-8" />
             <div className="flex justify-center space-x-4 mb-8">
                 <img
-                    src="images/relate_product4.png"
+                    src="images/aboutPage/relate_product4.png"
                     alt="Food 2"
                     className="w-45 h-45 object-cover rounded-lg shadow-2xl shadow-gray-600"
                 />
                 <img
-                    src="images/relate_product3.png"
+                    src="images/aboutPage/relate_product3.png"
                     alt="Food 2"
                     className="w-45 h-45 object-cover rounded-lg shadow-2xl shadow-gray-600"
                 />
                 <img
-                    src="images/relate_product2.png"
+                    src="images/aboutPage/relate_product2.png"
                     alt="Food 2"
                     className="w-45 h-45 object-cover rounded-lg shadow-2xl shadow-gray-600"
                 />
                 <img
-                    src="images/relate_product1.png"
+                    src="images/aboutPage/relate_product1.png"
                     alt="Food 2"
                     className="w-45 h-45 object-cover rounded-lg shadow-2xl shadow-gray-600"
                 />

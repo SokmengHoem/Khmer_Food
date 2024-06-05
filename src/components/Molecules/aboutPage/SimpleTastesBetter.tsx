@@ -1,7 +1,6 @@
 import React from "react";
-import img from '../../../public/images/relate_product1.png';
-
-const SimpleTastesBetter: React.FC = () => {
+const imgPath = '/images/aboutPage/relate_product2.png';
+export const SimpleTastesBetter: React.FC = () => {
     return (
         <div className="flex items-center justify-between bg-[#FBF9F4] p-8">
             <div className="max-w-md">
@@ -14,7 +13,7 @@ const SimpleTastesBetter: React.FC = () => {
             </div>
             <div className="mr-8">
                 <img
-                    src={img}
+                    src={imgPath}
                     alt="Delicious food"
                     className="rounded-lg shadow-2xl shadow-gray-600"
                 />
@@ -23,4 +22,3 @@ const SimpleTastesBetter: React.FC = () => {
     );
 };
 
-export default SimpleTastesBetter;

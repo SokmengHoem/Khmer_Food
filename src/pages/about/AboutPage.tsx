@@ -1,12 +1,12 @@
 import Carousel from "../../components/Templates/Carousel";
-import SimpleTastesBetter from '../../components/Molecules/SimpleTastesBetter';
-import OnlyTheGoodStuff from "../../components/Molecules/GoodStuff";
-import { FoodGallery } from "../../components/Molecules/FoodGallery";
+import OnlyTheGoodStuff from "../../components/Molecules/aboutPage/GoodStuff";
+import { FoodGallery } from "../../components/Molecules/aboutPage/FoodGallery";
+import { SimpleTastesBetter } from "../../components/Molecules/aboutPage/SimpleTastesBetter";
 
 const sliders: string[] = [
-  'images/slide_Carousel1.png',
-  'images/slide_Carousel2.png',
-  'images/slide_Carousel3.png',
+  'images/aboutPage/slide_Carousel1.png',
+  'images/aboutPage/slide_Carousel2.png',
+  'images/aboutPage/slide_Carousel3.png',
 ];
 type Props = {}
 
