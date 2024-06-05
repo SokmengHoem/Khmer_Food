@@ -23,22 +23,22 @@ export const FoodGallery: React.FC = () => {
                 <img
                     src="images/aboutPage/relate_product4.png"
                     alt="Food 2"
-                    className="w-45 h-45 object-cover rounded-lg shadow-2xl shadow-gray-600"
+                    className="w-44 h-44 object-cover rounded-lg shadow-2xl shadow-gray-600"
                 />
                 <img
                     src="images/aboutPage/relate_product3.png"
                     alt="Food 2"
-                    className="w-45 h-45 object-cover rounded-lg shadow-2xl shadow-gray-600"
+                    className="w-44 h-44 object-cover rounded-lg shadow-2xl shadow-gray-600"
                 />
                 <img
                     src="images/aboutPage/relate_product2.png"
                     alt="Food 2"
-                    className="w-45 h-45 object-cover rounded-lg shadow-2xl shadow-gray-600"
+                    className="w-44 h-44 object-cover rounded-lg shadow-2xl shadow-gray-600"
                 />
                 <img
                     src="images/aboutPage/relate_product1.png"
                     alt="Food 2"
-                    className="w-45 h-45 object-cover rounded-lg shadow-2xl shadow-gray-600"
+                    className="w-44 h-44 object-cover rounded-lg shadow-2xl shadow-gray-600"
                 />
             </div>
             <div className="flex justify-center space-x-4 mb-8">
@@ -48,7 +48,7 @@ export const FoodGallery: React.FC = () => {
                         key={index}
                         src={image}
                         alt={`Food ${index + 1}`}
-                        className="w-45 h-45 object-cover rounded-lg shadow-2xl shadow-gray-600"
+                        className="w-44 h-44 object-cover rounded-lg shadow-2xl shadow-gray-600"
                     />
                 ))}
             </div>
