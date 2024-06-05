@@ -1,6 +1,7 @@
 import Carousel from "../../components/Templates/Carousel";
 import SimpleTastesBetter from '../../components/Molecules/SimpleTastesBetter';
 import OnlyTheGoodStuff from "../../components/Molecules/GoodStuff";
+import { FoodGallery } from "../../components/Molecules/FoodGallery";
 
 const sliders: string[] = [
   'images/slide_Carousel1.png',
@@ -24,6 +25,9 @@ export default function AboutPage({ }: Props) {
       </div>
       <div>
         <OnlyTheGoodStuff/>
+      </div>
+      <div>
+        <FoodGallery/>
       </div>
     </div>
   )

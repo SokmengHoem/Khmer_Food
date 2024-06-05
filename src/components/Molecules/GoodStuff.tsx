@@ -22,7 +22,7 @@ const features = [
 const OnlyTheGoodStuff: React.FC = () => {
     return (
         <div className="text-center py-12 bg-white">
-            <h2 className="text-3xl font-bold mb-36">Only The Good Stuff</h2>
+            <h2 className="text-3xl font-bold mb-10">Only The Good Stuff</h2>
             <div className="flex justify-between space-x-8 mb-8 ml-44 mr-44">
                 {features.map((feature, index) => (
                     <div key={index} className="flex flex-col items-center">
