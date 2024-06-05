@@ -40,43 +40,43 @@ const Layout: React.FC = () => {
           </div>
           <div className="hidden md:flex flex-row gap-9">
             <button
-              className={`${isActive('/')} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+              className={`${isActive('/')} hover:font-semibold hover:text-blue-400 transition-all duration-300 text-xl`}
               onClick={() => onClickLinkPage('/')}
             >
               Home
             </button>
             <button
-              className={`${isActive('/food')} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+              className={`${isActive('/food')} hover:font-semibold hover:text-blue-400 transition-all duration-300 text-xl`}
               onClick={() => onClickLinkPage('/food')}
             >
               Foods
             </button>
             <button
-              className={`${isActive('/about')} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+              className={`${isActive('/about')} hover:font-semibold hover:text-blue-400 transition-all duration-300 text-xl`}
               onClick={() => onClickLinkPage('/about')}
             >
               About
             </button>
             <button
-              className={`${isActive('/faq')} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+              className={`${isActive('/faq')} hover:font-semibold hover:text-blue-400 transition-all duration-300 text-xl`}
               onClick={() => onClickLinkPage('/faq')}
             >
               FAQ
             </button>
             <button
-              className={`${isActive('/blog')} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+              className={`${isActive('/blog')} hover:font-semibold hover:text-blue-400 transition-all duration-300 text-xl`}
               onClick={() => onClickLinkPage('/blog')}
             >
               Blog
             </button>
             <button
-              className={`${isActive('/contact')} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+              className={`${isActive('/contact')} hover:font-semibold hover:text-blue-400 transition-all duration-300 text-xl`}
               onClick={() => onClickLinkPage('/contact')}
             >
               Contact
             </button>
             <button
-              className={`${isActive('/login')} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+              className={`${isActive('/login')} hover:font-semibold hover:text-blue-400 transition-all duration-300 text-xl`}
               onClick={() => onClickLinkPage('/login')}
             >
               Login
@@ -97,7 +97,7 @@ const Layout: React.FC = () => {
             </button>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="text-white focus:outline-none md:hidden"
+              className="text-black focus:outline-none md:hidden"
             >
               {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>

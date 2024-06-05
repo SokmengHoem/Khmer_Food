@@ -1,14 +1,20 @@
 
 import React from 'react'
-import { Link } from 'react-router-dom'
+import ProductHeader from '../../components/Molecules/ProductHeader'
+import NavLink from '../../components/Organisms/layouts/NavLink'
 
 type Props = {}
 
 function FoodPage({}: Props) {
   return (
    <>
-     <div>FoodPage</div>
-     <Link to="/food-details">See detail</Link>
+     <ProductHeader 
+     title={'Our Products'} 
+     description={'Our products are packed with real, great-tasting ingredients and are always free from high fructose corn syrup and all the other artificial junk.'} 
+     image={'images/FishAmok.webp'}
+     noneImg={'images/food.png'}
+     />
+     <NavLink/>
    </>
   )
 }
