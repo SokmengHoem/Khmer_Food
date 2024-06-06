@@ -1,26 +1,21 @@
-// import React from 'react';
-// import FoodItem from './FoodItem';
+// FoodDetail.tsx
+import React from 'react';
+import FoodItem from './FoodItem';
+import { foodDetail } from '../../../data/myData';
 
-// const FoodDetail: React.FC = () => {
-//   const myData = {
-//     name: 'Prahok Tis',
-//     priceRange: '$25.00 - $100.00',
-//     description: 'Prahok used in Khmer cuisine as a spice or spice. It originated from fish during the month when there was no fresh fish to supply.',
-//     imageUrl: 'path-to-your-image.jpg', // Update this path accordingly
-//     rating: '★ ★ ★ ★ ★'
-//   };
 
-//   return (
-//     <div>
-//       <FoodItem
-//         name={myData.name}
-//         priceRange={myData.priceRange}
-//         description={myData.description}
-//         imageUrl={myData.imageUrl}
-//         rating={myData.rating}
-//       />
-//     </div>
-//   );
-// };
+const FoodDetail: React.FC = () => {
+  return (
+    <div>
+      <FoodItem
+        name={foodDetail.name}
+        priceRange={foodDetail.priceRange}
+        description={foodDetail.description}
+        imageUrl={foodDetail.imageUrl}
+        rating={foodDetail.rating}
+      />
+    </div>
+  );
+};
 
-// export default FoodDetail;
+export default FoodDetail;

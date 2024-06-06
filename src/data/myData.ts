@@ -83,3 +83,19 @@ export const reviews: RealWorldType[] = [
     author: "— Mia W."
   },
 ];
+
+
+export interface FoodDetail {
+  name: string;
+  priceRange: string;
+  description: string;
+  imageUrl: string;
+  rating: string;
+}
+export const foodDetail: FoodDetail = {
+  name: 'Prahok Tis',
+  priceRange: '$25.00 - $100.00',
+  description: 'Prahok used in Khmer cuisine as a spice or spice. It originated from fish during the month when there was no fresh fish to supply.',
+  imageUrl: 'public/images/aboutPage/relate_product1.png', 
+  rating: '★ ★ ★ ★ ★'
+};
