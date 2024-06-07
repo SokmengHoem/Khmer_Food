@@ -27,11 +27,11 @@ const FoodItem: React.FC<FoodItemProps> = ({ name, priceRange, description, imag
     }
     return (
         <div className="bg-gray-50 p-6 rounded-lg shadow-lg flex items-center space-x-60">
-            <div className="ml-12 bg-gray-300 w-96 h-80 rounded-2xl flex items-center justify-center duration-300 ease-in-out hover:bg-slate-700">
+            <div className="ml-12 bg-gray-300 w-80 h-80 rounded-2xl flex items-center justify-center duration-300 ease-in-out hover:bg-slate-700">
                 <img
                     src={imageUrl}
                     alt="Food"
-                    className="w-64 h-64 rounded-2xl shadow-2xl shadow-gray-600 object-cover items-center duration-300 ease-in-out hover:scale-110 hover:rotate-3"
+                    className="rounded-full w-64 h-64 shadow-2xl shadow-gray-600 object-cover items-center duration-300 ease-in-out hover:scale-110 hover:rotate-3"
                 />
             </div>
             <div>
