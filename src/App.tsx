@@ -11,6 +11,8 @@ import LoginPage from './pages/auth/LoginPage'
 import Register from './pages/auth/Register'
 import FAQPage from './pages/faq/FAQPage'
 import BlogPage from './pages/blog/BlogPage'
+import FoodKhmer from './pages/food/subfood/FoodKhmer'
+import FoodNum from './pages/food/subfood/FoodNum'
 
 function App() {
   return (

@@ -86,7 +86,6 @@ export const reviews: RealWorldType[] = [
 ];
 
 
-<<<<<<< HEAD
 
 export const foods: FoodItemType[] = [
   {
@@ -352,7 +351,6 @@ export const foodsNum: FoodItemType[] = [
   },
 ];
 
-=======
 export interface FoodDetail {
   name: string;
   priceRange: string;
@@ -440,4 +438,4 @@ export const AddToCard:addTocard[] = [
     price:"44.11"
   }
 ];
->>>>>>> f79ffc281ef94f6af5c563a16038c30fef57a0c8
+
