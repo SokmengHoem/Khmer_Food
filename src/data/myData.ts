@@ -159,15 +159,16 @@ interface addTocard {
 export const AddToCard:addTocard[] = [
   {
     id:1,
-    img:"https://imgs.search.brave.com/vhxPFG7SfUxeqxQtJgIRH_IMZK7lfEChA3jmUnNJ_Oo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jYW1i/b2RpYXRyYXZlbC5j/b20vaW1hZ2VzLzIw/MjAvMTAvQ2FtYm9k/aWEtbGFwMS5qcGc",
-    title:"Title one",
+    img:"https://3.bp.blogspot.com/-hGpLdFaP_Ds/XfDAtlM-UWI/AAAAAAAAGRg/LFctb_b4BhcITJB8hmklhcJ-yhHdKTsxgCLcBGAsYHQ/s1600/a8.jpg",
+    title:"Prahok Khtis",
     size:"S",
     price:"22.33"
-  },{
+  },
+  {
     id:2,
-    img:"https://imgs.search.brave.com/I6IoFF8DCVz9X7sSdEUml6PrTFz8XbpzCp_vrK7QZqw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5jbm4uY29tL2Fw/aS92MS9pbWFnZXMv/c3RlbGxhci9wcm9k/LzE5MTEyMjE1Mjg0/Ny0yNC1uaG9hbS1z/dmF5LWtjaGFpLXN0/ZXZlbi1oYWxjcm93/LmpwZz9xPXdfMTEx/MCxjX2ZpbGw",
-    title:"Title Two",
-    size:"M",
+    img:"https://1.bp.blogspot.com/-6e1PVRmq69E/XfDAkQH8y-I/AAAAAAAAGP0/WjyguwBOpVg-ErcIX2-s-pBJJ-ClKNqQACLcBGAsYHQ/s1600/a10.jpg",
+    title:"kari sa rea mean",
+    size:"M", 
     price:"44.11"
   }
 ];

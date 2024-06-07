@@ -18,28 +18,37 @@ const Cart: React.FC = () => {
             <div className="space-y-4">
                 {
                     AddToCard.map(addtocard => (
-                        <div className="flex items-center justify-between p-4 bg-white shadow-md shadow-gray-500 rounded-md">
+                        <div className="grid grid-cols-4 gap-4 bg-gray-100 rounded-2xl">
                             <img
                                 src={addtocard.img}
                                 alt={addtocard.title}
-                                className="w-36 h-36 rounded object-cover"
+                                className="w-36 h-36 rounded-2xl object-cover p-0"
                             />
-                            <div className="flex-1 mx-4">
-                                <h2 className="text-xl font-semibold">{addtocard.title}</h2>
-                                <p className="text-lg">{"Size : "+addtocard.size}</p>
-                                <p className="text-red-500 text-sm">{"$ "+addtocard.price}</p>
+                            <div className="grid  mt-10 mb-6">
+                                <div className="justify-center items-center">
+                                    <h2 className="text-xl font-semibold text-center">{addtocard.title}</h2>
+                                    <p className="text-lg text-center">{"Size : " + addtocard.size},  <span className="text-red-500 text-lg text-center">{"$ " + addtocard.price} only</span></p>
+                                </div>
                             </div>
-                            <div className="flex items-center">
-                                <button className="px-2 py-1 text-white bg-red-700 rounded">-</button>
-                                <span className="mx-2">1</span>
-                                <button className="px-2 py-1 text-white bg-red-700 rounded">+</button>
+                            <div className="grid  mt-10 mb-6">
+                                <div className="grid grid-cols-3 bg-red-700 text-white rounded-2xl w-36 h-12 shadow-md shadow-gray-500 text-xl">
+                                    <button className="px-3 py-1 font-bold">-</button>
+                                    <div className="px-4 py-2 font-bold items-start justify-center">1</div>
+                                    <button className="px-5 py-1 font-bold items-end">+</button>
+                                </div>
                             </div>
-                            <button className="ml-4 text-red-700">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
+                            {/* <div>001</div>
+                                <div>001</div> */}
+                            <div className="flex items-center justify-between p-0 bg-white rounded-2xl ml-28">
+                                <button className="ml-6">
+                                    <img 
+                                        src="images/trash.png"
+                                        className="pl-3 w-8 duration-150 ease-in-out hover:scale-125"
+                                    />
+                                </button>
+                            </div>
                         </div>
+
                     ))
                 }
             </div>
