@@ -1,8 +1,9 @@
 export const FoodDetail: React.FC = () =>{
     return (
         <div>
-            <h1>Product Detail</h1>
+            <h1>Hellow world</h1>
         </div>
     );
 }
 
+export default FoodDetail;

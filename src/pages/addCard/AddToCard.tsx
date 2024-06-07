@@ -1,9 +1,20 @@
 import React from 'react'
+import Cart from '../../components/Molecules/addTocard/addToCard';
 
 type Props = {}
 
-export default function AddToCard({}: Props) {
+// export default function AddToCard({}: Props) {
+//   return (
+//     <div>AddToCard</div>
+//   )
+// }
+
+const AddToCard:React.FC = () =>{
   return (
-    <div>AddToCard</div>
-  )
+    <div>
+      <Cart/>
+    </div>
+  );
 }
+
+export default AddToCard;

@@ -11,9 +11,10 @@ import LoginPage from './pages/auth/LoginPage'
 import Register from './pages/auth/Register'
 import FAQPage from './pages/faq/FAQPage'
 import BlogPage from './pages/blog/BlogPage'
+import FoodKhmer from './pages/food/subfood/FoodKhmer'
+import FoodNum from './pages/food/subfood/FoodNum'
 
 function App() {
- 
   return (
     <>
       <BrowserRouter>
@@ -23,11 +24,13 @@ function App() {
           <Route path="food" element={<FoodPage/>}/>
           <Route path="food-details" element={<FoodDetails />} />
           <Route path="about" element={<AboutPage />} />
-          <Route path="contact" element={<ContactPage/>} />
-          <Route path="favorite" element={<FavoritePage/>}/>
-          <Route path="add-card" element={<AddToCard/>}/>
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="favorite" element={<FavoritePage />} />
+          <Route path="add-card" element={<AddToCard />} />
           <Route path="faq" element={<FAQPage />} />
           <Route path="blog" element={<BlogPage />} />
+          <Route path="food-khmer" element={<FoodKhmer />} />
+          <Route path="food-num" element={<FoodNum />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<Register />} />
           <Route path="food-detail" element={<FoodDetails />} />
@@ -35,7 +38,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
