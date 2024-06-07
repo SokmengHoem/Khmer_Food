@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {FoodProduct} from '../../../data/myData'
 export const PageRelateFood: React.FC = () => {
     return (
@@ -7,7 +7,7 @@ export const PageRelateFood: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:ml-40 md:mr-40 gap-3">
                 {
                     FoodProduct.map(product => (
-                        <div key={product.id} className="bg-white rounded-lg shadow-2xl shadow-gray-600 overflow-hidden justify-center flex">
+                            <div key={product.id} className="bg-white rounded-lg shadow-2xl shadow-gray-600 overflow-hidden justify-center flex">
                             <img
                                 src={product.imgFood}
                                 alt={product.title}

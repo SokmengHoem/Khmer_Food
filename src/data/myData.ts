@@ -147,3 +147,27 @@ export const FoodProduct: foodProduct[] = [
       title: "Product001"
   }
 ];
+
+interface addTocard {
+  id:number,
+  img:string,
+  title:string,
+  size:string,
+  price:string
+}
+
+export const AddToCard:addTocard[] = [
+  {
+    id:1,
+    img:"https://imgs.search.brave.com/vhxPFG7SfUxeqxQtJgIRH_IMZK7lfEChA3jmUnNJ_Oo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jYW1i/b2RpYXRyYXZlbC5j/b20vaW1hZ2VzLzIw/MjAvMTAvQ2FtYm9k/aWEtbGFwMS5qcGc",
+    title:"Title one",
+    size:"S",
+    price:"22.33"
+  },{
+    id:2,
+    img:"https://imgs.search.brave.com/I6IoFF8DCVz9X7sSdEUml6PrTFz8XbpzCp_vrK7QZqw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5jbm4uY29tL2Fw/aS92MS9pbWFnZXMv/c3RlbGxhci9wcm9k/LzE5MTEyMjE1Mjg0/Ny0yNC1uaG9hbS1z/dmF5LWtjaGFpLXN0/ZXZlbi1oYWxjcm93/LmpwZz9xPXdfMTEx/MCxjX2ZpbGw",
+    title:"Title Two",
+    size:"M",
+    price:"44.11"
+  }
+];
