@@ -11,6 +11,12 @@ export default {
         "login-bg": "url('images/login.png')",
       },
     },
+    screens: {
+      sm: '350px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
   },
   plugins: [],
 };

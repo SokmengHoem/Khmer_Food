@@ -1,26 +1,28 @@
-import React from 'react'
-
+import React from 'react';
 
 interface OurProductProps {
-    title: string;
-    description: string;
-    image: string;
-    noneImg?: string;
+  title: string;
+  description: string;
+  image: string;
+  noneImg: string;
 }
 
-export default function ProductHeader({title, description, image, noneImg}: OurProductProps) {
+const ProductHeader: React.FC<OurProductProps> = ({ title, description, image, noneImg }) => {
   return (
-    <div className=' w-full h-[70vh] bg-[#fdfaf2] flex items-center gap-10 justify-center'>
-        <div className=' flex flex-col w-[50%]'>
-            <h1 className=' text-6xl font-extrabold tracking-widest text-gray-700'>{title}</h1>
-            <p className=' mt-6 text-lg font-medium text-gray-600'>{description}</p>
-            <div className=' w-40'>
-                <img src={noneImg} className=' w-full object-cover' alt="" />
-            </div>
+    <div className='w-full h-auto md:h-[70vh] flex flex-col md:flex-row items-center gap-10 justify-center p-4 md:p-10'>
+      <div className='flex flex-col w-full md:w-[50%] text-center md:text-left'>
+        <h1 className='text-3xl md:text-6xl font-extrabold tracking-widest text-gray-700'>{title}</h1>
+        <p className='mt-4 md:mt-6 text-base md:text-lg font-medium text-gray-600'>{description}</p>
+        <div className='w-20 md:w-40 mt-4 md:mt-6 mx-auto md:mx-0'>
+          <img src={noneImg} className='w-full object-cover' alt="" />
         </div>
-        <div className='w-[30%] shadow-xl'>
-           <img src={image} alt=""  className=' w-full rounded-xl'/>
-        </div>
+      </div>
+      <div className='w-full md:w-[30%] overflow-hidden shadow-lg rounded-xl'>
+        <img src={image} alt="" className='w-full' />
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default ProductHeader;
+

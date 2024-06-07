@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -28,8 +27,12 @@ const Layout: React.FC = () => {
     setMenuOpen(false); // Close the menu after navigation
   };
 
-  const isActive = (route: string): string =>
-    location.pathname === route ? 'text-blue-600 font-bold' : 'text-gray-700 font-medium';
+  const isActive = (route: string): string => {
+    if (route === '/food') {
+      return location.pathname.startsWith('/food') ? 'text-blue-600 font-bold' : 'text-gray-700 font-medium';
+    }
+    return location.pathname === route ? 'text-blue-600 font-bold' : 'text-gray-700 font-medium';
+  };
 
   return (
     <div>
