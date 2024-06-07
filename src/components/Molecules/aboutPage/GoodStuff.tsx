@@ -23,16 +23,27 @@ const OnlyTheGoodStuff: React.FC = () => {
     return (
         <div className="text-center py-12 bg-white">
             <h2 className="text-3xl font-bold mb-10">Only The Good Stuff</h2>
-            <div className="flex justify-between space-x-8 mb-8 ml-44 mr-44">
-                {features.map((feature, index) => (
-                    <div key={index} className="flex flex-col items-center">
-                        {feature.imgSrc && (
-                            <img src={feature.imgSrc} alt={feature.text} className="w-12 h-12 mb-4" />
-                        )}
-                        <p className="text-lg font-medium text-gray-700">{feature.text}</p>
-                    </div>
-                ))}
+
+            <div className="grid grid-cols-4 gap-4 ml-40 mr-40 pb-14">
+                <div className="col-span-1 flex flex-col items-center justify-center">
+                    <img src="/images/aboutPage/icon1.png" className="w-20 h-20" alt="Icon 1" />
+                    <div className="text-center font-bold p-2">No High Fructose Corn Syrup</div>
+                </div>
+                <div className="col-span-1 flex flex-col items-center justify-center">
+                    <img src="/images/aboutPage/icon2.png" className="w-20 h-20" alt="Icon 1" />
+                    <div className="text-center font-bold p-2">No Artificial Flavors, <br/> Colors or Preservatives</div>
+                </div>
+                <div className="col-span-1 flex flex-col items-center justify-center">
+                    <img src="/images/aboutPage/icon3.png" className="w-20 h-20" alt="Icon 1" />
+                    <div className="text-center font-bold p-2">Gluten Free</div>
+                </div>
+                <div className="col-span-1 flex flex-col items-center justify-center">
+                    <img src="/images/aboutPage/icon4.png" className="w-20 h-20" alt="Icon 1" />
+                    <div className="text-center font-bold p-2">Non GMO</div>
+                </div>
             </div>
+
+
             <h3 className="text-2xl font-bold text-gray-900">SIMPLE INGREDIENTS. NO JUNK.®</h3>
         </div>
     );
