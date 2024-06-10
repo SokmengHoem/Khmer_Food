@@ -8,6 +8,7 @@ type NavActiveProps = {
  numKhmer?: boolean;
  moreFood?: boolean;
  drink?: boolean;
+ handleSearch: (search: string) => void;
 }
 
 export default function NavActive({
@@ -16,6 +17,7 @@ export default function NavActive({
   numKhmer = false,
   moreFood = false,
   drink = false,
+  handleSearch,
 }: NavActiveProps) {
   return (
     <div className='w-full h-auto'>
@@ -28,7 +30,7 @@ export default function NavActive({
           <Link to="/food-more" className={`${moreFood ? "text-blue-500 font-semibold" : ""}`}>More food</Link>
         </div>
         <div className='w-full md:w-auto'>
-          <Input type='text' prefix={<IoSearch />} placeholder="Search food" allowClear className='w-full md:w-62 xl:w-80 sm:w-40 rounded-full hover:border-blue-600 hover:bg-white' />
+          <Input type='text' onChange={(e) => handleSearch(e.target.value)}  prefix={<IoSearch />} placeholder="Search food" allowClear className='w-full md:w-62 xl:w-80 sm:w-40 rounded-full hover:border-blue-600 hover:bg-white' />
         </div>
       </div>
     </div>

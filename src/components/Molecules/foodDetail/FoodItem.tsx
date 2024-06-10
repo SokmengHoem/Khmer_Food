@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-interface FoodItemProps {
-    name: string;
-    priceRange: string;
-    description: string;
-    imageUrl: string;
-    rating: string;
-}
+import { useFood } from '../../../context/FoodContext';
 
-const FoodItem: React.FC<FoodItemProps> = ({ name, priceRange, description, imageUrl, rating }) => {
+const FoodItem: React.FC = () => {
+    const {viewFood} = useFood();
     const [number, setNumber] = useState(0)
     const [click, setClick] = useState(false)
     const onClicked = () => {
@@ -26,23 +21,24 @@ const FoodItem: React.FC<FoodItemProps> = ({ name, priceRange, description, imag
         }
     }
     return (
-        <div className="bg-gray-50 p-6 rounded-lg shadow-lg flex items-center space-x-60">
+        <div className=" w-[90%] h-auto mx-auto  p-6 rounded-lg  flex items-center space-x-60">
             <div className="ml-12 bg-gray-300 w-80 h-80 rounded-2xl flex items-center justify-center duration-300 ease-in-out hover:bg-slate-700">
                 <img
-                    src={imageUrl}
+                    src={viewFood.image}
                     alt="Food"
                     className="rounded-full w-64 h-64 shadow-2xl shadow-gray-600 object-cover items-center duration-300 ease-in-out hover:scale-110 hover:rotate-3"
-                />
+                /> 
+              
             </div>
             <div>
-                <h2 className="text-4xl font-bold">{name}</h2>
-                <p className="text-2xl text-orange-600 mt-2">{priceRange}</p>
+                <h2 className="text-4xl font-bold">{viewFood.name}</h2>
+                <p className="text-2xl text-orange-600 mt-2">{viewFood.price}</p>
                 <p className="text-gray-700 mt-2 text-2xl">
-                    {description}
+                    {viewFood.description}
                 </p>
                 <div className="flex items-center mt-4">
                     <span className="text-yellow-400 text-2xl">
-                        {rating}
+                    ★ ★ ★ ★
                     </span>
                 </div>
                 <div className="flex items-center mt-4">

@@ -6,17 +6,18 @@ import NavLink from "../../../components/Organisms/layouts/NavLink";
 import Button from "../../../components/atoms/Button";
 import React, { useEffect, useState } from "react";
 
-interface FoodKhProp{
-  foodsKh: FoodItemType[],
+interface FoodDrinkProp{
+  drinks: FoodItemType[],
 }
 
-const FoodKhmer:React.FC<FoodKhProp> = ({ foodsKh}) => {
+
+const FoodDrink:React.FC<FoodDrinkProp> = ({ drinks}) => {
   const [data, setData] = useState<FoodItemType[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [num, setNum] = useState<number>(0);
 
   const handleFilter = () => {
-    let filtered = foodsKh;
+    let filtered = drinks;
     if (searchTerm !== "") {
       filtered = filtered.filter((item) =>
         item.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -40,8 +41,6 @@ const FoodKhmer:React.FC<FoodKhProp> = ({ foodsKh}) => {
     setNum((prevNum) => prevNum + 4);
   };
 
-  const filteredData = handleFilter();
-
   return (
     <>
       <ProductHeader
@@ -49,27 +48,23 @@ const FoodKhmer:React.FC<FoodKhProp> = ({ foodsKh}) => {
         description={
           "Our products are packed with real, great-tasting ingredients and are always free from high fructose corn syrup and all the other artificial junk."
         }
-        image={"images/foodPage/aaa.webp"}
-        noneImg={""}
+        image={"images/foodPage/i.jpg"}
+        noneImg={"images/foodPage/p.jpg"}
       />
-      <NavLink khmerFood={true} handleSearch={setSearchTerm} />
+      <NavLink drink={true} handleSearch={setSearchTerm} />
       <div className="w-[83%] h-auto mx-auto mb-10 grid sm:grid-cols-1 grid-cols-4 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {data.length === 0 && searchTerm !== "" ? (
-          <div className="col-span-4 text-center text-red-600">No products found</div>
-        ) : (
-          data.map((food) => <CartFood key={food.id} food={food}/>)
-        )}
+        {data.map((food) => (
+          <CartFood key={food.id} food={food}/>
+        ))}
       </div>
-      {filteredData.length > data.length && (
-        <div className="flex items-center justify-center">
-          <Button variant="myWeb" onClick={handleClick}>
-            See More
-          </Button>
-        </div>
-      )}
+      <div className="flex items-center justify-center">
+        <Button variant="myWeb" onClick={handleClick}>
+          See More
+        </Button>
+      </div>
       <OrderSection />
     </>
   );
 };
 
-export default FoodKhmer;
+export default FoodDrink;

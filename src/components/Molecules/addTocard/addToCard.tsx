@@ -1,33 +1,24 @@
-// import React from "react";
 
-// export const Card:React.FC = () =>{
-//     return (
-//         <div>
-//             <h1 className="text-3xl font-bold text-center text-red-700 mb-8">Your Card</h1>
-//         </div>  
-//     ); 
-// }
-
-import React from 'react';
-import { AddToCard } from '../../../data/myData';
+import { useFood } from '../../../context/FoodContext';
 
 const Cart: React.FC = () => {
+    const {addToCart, removeFoodCart} = useFood();
     return (
-        <div className="max-w-4xl mx-auto p-4 bg-gray-300 mb-8 rounded shadow-2xl shadow-black-100">
+        <div className="max-w-4xl mx-auto p-4 mb-8 rounded  shadow-black-100">
             <h1 className="text-3xl font-bold text-center text-red-700 mb-8">Your Cart</h1>
             <div className="space-y-4">
                 {
-                    AddToCard.map(addtocard => (
-                        <div className="grid grid-cols-4 gap-4 bg-gray-100 rounded-2xl">
+                    addToCart.map(item => (
+                        <div className="grid grid-cols-4 gap-4 shadow-md bg-gray-100 rounded-2xl">
                             <img
-                                src={addtocard.img}
-                                alt={addtocard.title}
+                                src={item.image}
+                                alt={item.name}
                                 className="w-36 h-36 rounded-2xl object-cover p-0"
                             />
                             <div className="grid  mt-10 mb-6">
                                 <div className="justify-center items-center">
-                                    <h2 className="text-xl font-semibold text-center">{addtocard.title}</h2>
-                                    <p className="text-lg text-center">{"Size : " + addtocard.size},  <span className="text-red-500 text-lg text-center">{"$ " + addtocard.price} only</span></p>
+                                    {/* <h2 className="text-xl font-semibold text-center">{item.}</h2> */}
+                                    <p className="text-lg text-center">{"Size : " + item.size},  <span className="text-red-500 text-lg text-center">{"$ " + item.price} only</span></p>
                                 </div>
                             </div>
                             <div className="grid  mt-10 mb-6">
@@ -40,7 +31,7 @@ const Cart: React.FC = () => {
                             {/* <div>001</div>
                                 <div>001</div> */}
                             <div className="flex items-center justify-between p-0 bg-white rounded-2xl ml-28">
-                                <button className="ml-6">
+                                <button onClick={()=> removeFoodCart(item)} className="ml-6">
                                     <img 
                                         src="images/trash.png"
                                         className="pl-3 w-8 duration-150 ease-in-out hover:scale-125"

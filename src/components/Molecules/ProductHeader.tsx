@@ -13,12 +13,12 @@ const ProductHeader: React.FC<OurProductProps> = ({ title, description, image, n
       <div className='flex flex-col w-full md:w-[50%] text-center md:text-left'>
         <h1 className='text-3xl md:text-6xl font-extrabold tracking-widest text-gray-700'>{title}</h1>
         <p className='mt-4 md:mt-6 text-base md:text-lg font-medium text-gray-600'>{description}</p>
-        <div className='w-20 md:w-40 mt-4 md:mt-6 mx-auto md:mx-0'>
+        <div className='w-20 md:w-40  mx-auto md:mx-0'>
           <img src={noneImg} className='w-full object-cover' alt="" />
         </div>
       </div>
-      <div className='w-full md:w-[30%] overflow-hidden shadow-lg rounded-xl'>
-        <img src={image} alt="" className='w-full' />
+      <div className='w-full h-72 md:w-[30%] overflow-hidden shadow-lg rounded-xl'>
+        <img src={image} alt="" className='w-full h-full' />
       </div>
     </div>
   );

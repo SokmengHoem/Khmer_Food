@@ -94,8 +94,9 @@ export const foods: FoodItemType[] = [
     name: "Num Ornsorm Jrurk",
     size: 'S',
     price: 4.99,
-    description: "Chicken lorem20",
-    favourite: true,
+    description: "Chicken lorem20 One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    favourite: false,
+    rating: '★ ★ ★ ★ ★'
   },
   {
     id: 2,
@@ -103,8 +104,9 @@ export const foods: FoodItemType[] = [
     name: "Num Chak KrChan",
     size: "M",
     price: 5.00,
-    description: "the best kh food",
+    description: "the best kh food One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year. ",
     favourite: false,
+    rating: '★ ★ ★ ★ ★'
   },
   {
     id: 3,
@@ -112,8 +114,9 @@ export const foods: FoodItemType[] = [
     name: "Num Duk",
     size: "L",
     price: 0.50,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
     favourite: false,
+    rating: '★ ★ ★ ★ ★'
   },
   {
     id: 4,
@@ -121,8 +124,9 @@ export const foods: FoodItemType[] = [
     name: "Turkey food",
     size: "M",
     price: 50.00,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.n",
     favourite: false,
+    rating: '★ ★ ★ ★ ★'
   },
   {
     id: 5,
@@ -130,8 +134,9 @@ export const foods: FoodItemType[] = [
     name: "Brampton Indian",
     size: "M",
     price: 11.99,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
     favourite: false,
+    rating: '★ ★ ★ ★ ★'
   },
   {
     id: 6,
@@ -139,8 +144,9 @@ export const foods: FoodItemType[] = [
     name: "Turkey food",
     size: "s",
     price: 31.99,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
     favourite: false,
+    rating: '★ ★ ★ ★ ★'
   },
   {
     id: 7,
@@ -148,8 +154,9 @@ export const foods: FoodItemType[] = [
     name: "Korean Bibimbap",
     size: "M",
     price: 10.99,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
     favourite: false,
+    rating: '★ ★ ★ ★ ★'
   },
   {
     id: 8,
@@ -157,8 +164,9 @@ export const foods: FoodItemType[] = [
     name: "Sashimi",
     size: "M",
     price: 100.00,
-    description: "Num Duk KrChan",
+    description: "Num Duk KrChan One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
     favourite: false,
+    rating: '★ ★ ★ ★ ★'
   },
   {
     id: 9,
@@ -168,6 +176,7 @@ export const foods: FoodItemType[] = [
     price: 1.00,
     description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
     favourite: false,
+    rating: '★ ★ ★ ★ ★'
   },
   {
     id: 10,
@@ -175,8 +184,9 @@ export const foods: FoodItemType[] = [
     name: "Tnaot",
     size: "M",
     price: 1.00,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
     favourite: false,
+    rating: '★ ★ ★ ★ ★'
   },
   {
     id: 11,
@@ -184,8 +194,9 @@ export const foods: FoodItemType[] = [
     name: "Rice with Amok ",
     size: "M",
     price: 5.00,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
     favourite: false,
+    rating: '★ ★ ★ ★ ★'
   },
   {
     id: 11,
@@ -193,7 +204,8 @@ export const foods: FoodItemType[] = [
     name: "Fruits in Cream",
     size: "M",
     price: 5.00,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
 ];
@@ -205,8 +217,9 @@ export const foodsKh: FoodItemType[] = [
     name: "M’chur Krerng",
     size: 'S',
     price: 4.99,
-    description: "Chicken lorem20",
-    favourite: true,
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
+    favourite: false,
   },
   {
     id: 2,
@@ -214,7 +227,8 @@ export const foodsKh: FoodItemType[] = [
     name: "Kaw Sach Chrouk",
     size: "M",
     price: 5.00,
-    description: "the best kh food",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★',
     favourite: false,
   },
   {
@@ -223,7 +237,8 @@ export const foodsKh: FoodItemType[] = [
     name: "Khor Ko",
     size: "L",
     price: 0.50,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
  
@@ -233,7 +248,8 @@ export const foodsKh: FoodItemType[] = [
     name: "Rice with Amok ",
     size: "M",
     price: 5.00,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
   {
@@ -242,7 +258,8 @@ export const foodsKh: FoodItemType[] = [
     name: "Prahok Sauce",
     size: "M",
     price: 5.00,
-    description: "Nom Bank Chok",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★',
     favourite: false,
   },
   {
@@ -251,7 +268,8 @@ export const foodsKh: FoodItemType[] = [
     name: " Nom Bank Chok",
     size: "M",
     price: 1.00,
-    description: "Nom Bank Chok",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
   {
@@ -260,7 +278,8 @@ export const foodsKh: FoodItemType[] = [
     name: " Terk Krerng and vegetable",
     size: "M",
     price: 10.00,
-    description: "Nom Bank Chok",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
   
@@ -270,7 +289,93 @@ export const foodsKh: FoodItemType[] = [
     name: "Banh Chev",
     size: "M",
     price: 2.50,
-    description: "Nom Bank Chok",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
+    favourite: false,
+  },
+ 
+];
+export const drinks: FoodItemType[] = [
+  {
+    id: 1,
+    image: "images/foodPage/p1.png",
+    name: "Passion Fruit Juice",
+    size: 'S',
+    price: 4.99,
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
+    favourite: false,
+  },
+  {
+    id: 2,
+    image: "images/foodPage/orange.png",
+    name: " Hot ginger tea ",
+    size: "M",
+    price: 2.00,
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
+    favourite: false,
+  },
+  {
+    id: 3,
+    image: "images/foodPage/tea.png",
+    name: "strawberry fruit tea",
+    size: "L",
+    price: 0.50,
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
+    favourite: false,
+  },
+ 
+  {
+    id: 4,
+    image: "images/foodPage/ama.png",
+    name: "Cafe Amazon ",
+    size: "M",
+    price: 5.00,
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
+    favourite: false,
+  },
+  {
+    id: 5,
+    image: "images/foodPage/ama1.png",
+    name: "Blac cafe",
+    size: "M",
+    price: 5.00,
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
+    favourite: false,
+  },
+  {
+    id: 6,
+    image: "images/foodPage/fruit.png",
+    name: "Ayurvedic Fruit Juices",
+    size: "M",
+    price: 1.00,
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
+    favourite: false,
+  },
+  {
+    id: 7,
+    image: "images/foodPage/f2.png",
+    name: " Dragon fruit juice",
+    size: "M",
+    price: 10.00,
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
+    favourite: false,
+  },
+  
+  {
+    id: 8,
+    image: "images/foodPage/f3.png",
+    name: "Pineapple juice fruit",
+    size: "M",
+    price: 2.50,
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
  
@@ -283,8 +388,9 @@ export const foodsNum: FoodItemType[] = [
     name: "Num Ornsorm Jrurk",
     size: 'S',
     price: 4.99,
-    description: "Chicken lorem20",
-    favourite: true,
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
+    favourite: false,
   },
   {
     id: 2,
@@ -292,7 +398,8 @@ export const foodsNum: FoodItemType[] = [
     name: "Num Chak KrChan",
     size: "M",
     price: 5.00,
-    description: "the best kh food",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
   {
@@ -301,7 +408,8 @@ export const foodsNum: FoodItemType[] = [
     name: "Num Duk",
     size: "L",
     price: 0.50,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
   {
@@ -310,7 +418,8 @@ export const foodsNum: FoodItemType[] = [
     name: "Dessert",
     size: "L",
     price: 100.0,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
   {
@@ -319,7 +428,8 @@ export const foodsNum: FoodItemType[] = [
     name: "Num Kom",
     size: "L",
     price: 100.0,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
   {
@@ -328,7 +438,8 @@ export const foodsNum: FoodItemType[] = [
     name: "Rice Cakes",
     size: "L",
     price: 100.0,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
   {
@@ -337,7 +448,8 @@ export const foodsNum: FoodItemType[] = [
     name: " Nom plae ai ",
     size: "L",
     price: 100.0,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
   {
@@ -346,26 +458,11 @@ export const foodsNum: FoodItemType[] = [
     name: " Khmer Num Kroch",
     size: "L",
     price: 100.0,
-    description: "Num Duk KrChan",
+    description: "One of the most famous popular variety of coconut is an aromatic coconut (fragrant coconut or Maphrao Num Hom). Aromatic coconut is an agricultural commodity that Thailand has the potential to produce and it has the trend for more exportation due to the global health trend and unique aromatic function, there is a great demand from overseas markets every year.",
+    rating: '★ ★ ★ ★',
     favourite: false,
   },
 ];
-
-export interface FoodDetail {
-  name: string;
-  priceRange: string;
-  description: string;
-  imageUrl: string;
-  rating: string;
-}
-export const foodDetail: FoodDetail = {
-  name: 'Prahok Tis',
-  priceRange: '$25.00 - $100.00',
-  description: 'Prahok used in Khmer cuisine as a spice or spice. It originated from fish during the month when there was no fresh fish to supply.',
-  imageUrl: 'public/images/aboutPage/relate_product1.png', 
-  rating: '★ ★ ★ ★ ★'
-};
-
 
 
 interface foodProduct {
@@ -411,31 +508,6 @@ export const FoodProduct: foodProduct[] = [
       id: 9,
       imgFood: "https://imgs.search.brave.com/8Zi75n_fook1RXcfvZAa1uIHP54uTLW8ZpaJI1w6QwA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90cmF2/ZWxkdWRlcy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MDkvY2FtYm9kaWEt/Zm9vZC1hbW9rXzAu/anBn",
       title: "Product001"
-  }
-];
-
-interface addTocard {
-  id:number,
-  img:string,
-  title:string,
-  size:string,
-  price:string
-}
-
-export const AddToCard:addTocard[] = [
-  {
-    id:1,
-    img:"https://3.bp.blogspot.com/-hGpLdFaP_Ds/XfDAtlM-UWI/AAAAAAAAGRg/LFctb_b4BhcITJB8hmklhcJ-yhHdKTsxgCLcBGAsYHQ/s1600/a8.jpg",
-    title:"Prahok Khtis",
-    size:"S",
-    price:"22.33"
-  },
-  {
-    id:2,
-    img:"https://1.bp.blogspot.com/-6e1PVRmq69E/XfDAkQH8y-I/AAAAAAAAGP0/WjyguwBOpVg-ErcIX2-s-pBJJ-ClKNqQACLcBGAsYHQ/s1600/a10.jpg",
-    title:"kari sa rea mean",
-    size:"M", 
-    price:"44.11"
   }
 ];
 
