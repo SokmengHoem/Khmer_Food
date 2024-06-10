@@ -3,37 +3,36 @@
 @tailwind utilities;
 
 .transform {
-    transition-property: transform;
-  }
-  
-  .transition-transform {
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-  }
-  
-  .translate-x-0 {
-    transform: translateX(0);
-  }
-  
-  .translate-x-full {
+  transition-property: transform;
+}
+
+.transition-transform {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.translate-x-0 {
+  transform: translateX(0);
+}
+
+.translate-x-full {
+  transform: translateX(100%);
+}
+
+@keyframes marquee {
+  0% {
     transform: translateX(100%);
   }
-  
-  @keyframes marquee {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  100% {
+    transform: translateX(-100%);
   }
-  
-  .marquee-content {
-    display: inline-block;
-    animation: marquee 10s linear infinite;
-  }
-  
-  .marquee-container:hover .marquee-content {
-    animation-play-state: paused;
-  }
-  
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}

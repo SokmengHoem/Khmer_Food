@@ -1,4 +1,4 @@
-// import { Li } from "react-router-dom";
+
 import { Link, Element } from "react-scroll";
 import { MdOutlineExpandCircleDown } from "react-icons/md";
 
@@ -130,6 +130,7 @@ export default function HomePage() {
                 </div>
                 {compareA.map((item) => (
                   <TitleWithIcon
+                  key={item.title}
                     title={item.title}
                     icon={item.icon}
                     iconPosition={item.iconPosition}
@@ -148,6 +149,7 @@ export default function HomePage() {
                 </div>
                 {compareB.map((item) => (
                   <TitleWithIcon
+                  key={item.title}
                     title={item.title}
                     icon={item.icon}
                     iconPosition={item.iconPosition}
