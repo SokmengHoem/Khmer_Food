@@ -5,10 +5,9 @@ import { useFood } from "../../context/FoodContext";
 export default function FoodDetail() {
 
   return (
-    
     <div>
-      <FoodItem/>
-      <PageRelateFood/>
+      <FoodItem />
+      <PageRelateFood />
     </div>
   );
 }
