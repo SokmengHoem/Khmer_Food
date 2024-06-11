@@ -1,13 +1,26 @@
 import * as React from 'react'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { useFood } from '../../../context/FoodContext';
 import { FoodItemType } from '../../Organisms/card/CartFood';
-import { Button } from 'antd';
 
 const Cart: React.FC = () => {
     const { addToCart, removeFoodCart } = useFood();
-    // declear new state
+    // declare new state
     const [count, setCount] = useState<{ [key: string]: number }>({});
+    const [subtotal, setSubtotal] = useState<number>(0);
+    const [total, setTotal] = useState<number>(0);
+
+    useEffect(() => {
+        // Calculate subtotal
+        let newSubtotal = 0;
+        for (const item of addToCart) {
+            newSubtotal += (item.price * (count[item.id.toString()] || 0));
+        }
+        setSubtotal(newSubtotal);
+
+        // Calculate total
+        setTotal(newSubtotal);
+    }, [count, addToCart]);
 
     const increaseCount = (itemId: string) => {
         setCount(prevCounts => ({
@@ -22,6 +35,7 @@ const Cart: React.FC = () => {
             [itemId]: prevCounts[itemId] > 1 ? prevCounts[itemId] - 1 : 1
         }));
     };
+
     return (
         <div className="max-w-4xl mx-auto p-4 mb-8 rounded  shadow-black-100">
             <h1 className="text-3xl font-bold text-center text-red-700 mb-8">Your Card</h1>
@@ -56,37 +70,28 @@ const Cart: React.FC = () => {
                     </div>
                 ))}
             </div>
-                <hr className='pt-4'/>
+            <hr className='pt-4' />
             <div className="flex">
                 <div className='grid grid-cols-3 gap-3'>
                     <input
                         placeholder='Category food'
                         className='rounded-2xl border p-2 items-center h-fit'
                     />
-                    <button className='rounded-2xl bg-red-500 text-white h-fit p-2'>Apply Category</button>
-                    <div className='rounded-2xl shadow-md shadow-orange-300 bg-red-100'>
-                        <h1 className='font-bold' >Card Total</h1>
-                        <hr className='border-gray-600'/>
-                        <div className='flex justify-between pl-2 pr-2'>
-                            <h1>A</h1>
-                            <h1>B</h1>
+                    <button className='rounded-2xl bg-red-500 hover:bg-red-600 text-white h-fit p-2'>Apply Category</button>
+                    <div className='rounded-lg shadow-md shadow-orange-300 bg-red-100 p-3'>
+                        <h1 className='font-bold pb-2'>Card Total</h1>
+                        <hr className='border-gray-600' />
+                        <div className='flex justify-between p-2'>
+                            <h1>Subtotal</h1>
+                            <h1>{"$" + subtotal.toFixed(2)}</h1>
                         </div>
-                        <hr className='border-gray-600'/>
-                        <div className='flex justify-between pl-2 pr-2'>
-                            <h1>A</h1>
-                            <h1>B</h1>
+                        <hr className='border-gray-600' />
+                        <div className='flex justify-between p-2 pb-0'>
+                            <h1>Total</h1>
+                            <h1>{"$" + total.toFixed(2)}</h1>
                         </div>
-                        <hr className='border-gray-600'/>
-                        <div className='flex justify-between pl-2 pr-2'>
-                            <h1>A</h1>
-                            <h1>B</h1>
-                        </div>
-                        <hr className='border-gray-600'/>
-                        <div className='flex justify-between pl-2 pr-2'>
-                        <button className='rounded-2xl bg-red-500 text-white'>Apply Category</button>
-                        </div>
+                        <button className='rounded-2xl bg-red-500 hover:bg-red-600 text-white h-fit p-2'>Buy Nows</button>
                     </div>
-                    
                 </div>
             </div>
         </div>
