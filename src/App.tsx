@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/home/HomePage'
 import AboutPage from './pages/about/AboutPage'
 import Layout from './components/Organisms/layouts/Layout'
@@ -24,29 +24,29 @@ function App() {
   return (
     <>
       <FoodProvider>
-      <BrowserRouter>
-        <Routes>
-         <Route path="/" element={<Layout/>}>
-          <Route path="" element={<HomePage />} />
-          <Route path="food" element={<FoodPage foods={foods}/>}/>
-          <Route path="food/:foodId" element={<FoodDetails/>} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="favorite" element={<FavoritePage />} />
-          <Route path="add-card" element={<AddToCard />} />
-          <Route path="faq" element={<FAQPage />} />
-          <Route path="blog" element={<BlogPage />} />
-          <Route path="food-khmer" element={<FoodKhmer foodsKh={foodsKh} />} />
-          <Route path="food-num" element={<FoodNum foodsNum={foodsNum}/>} />
-          <Route path="food-drink" element={<FoodDrink drinks={drinks}/>} />
-          <Route path="food-more" element={<FoodMore/>} />
-          <Route path="login" element={<LoginPage />} />
-          <Route path="register" element={<Register />} />
-          <Route path="submit-success" element={<SubmitPage/>}/>
-          <Route path="*" element={<_Errorr_404/>}/>
-         </Route>
-        </Routes>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route path="" element={<HomePage />} />
+              <Route path="food" element={<FoodPage foods={foods} />} />
+              <Route path="food/:foodId" element={<FoodDetails />} />
+              <Route path="about" element={<AboutPage />} />
+              <Route path="contact" element={<ContactPage />} />
+              <Route path="favorite" element={<FavoritePage />} />
+              <Route path="add-card" element={<AddToCard />} />
+              <Route path="faq" element={<FAQPage />} />
+              <Route path="blog" element={<BlogPage />} />
+              <Route path="food-khmer" element={<FoodKhmer foodsKh={foodsKh} />} />
+              <Route path="food-num" element={<FoodNum foodsNum={foodsNum} />} />
+              <Route path="food-drink" element={<FoodDrink drinks={drinks} />} />
+              <Route path="food-more" element={<FoodMore />} />
+              <Route path="login" element={<LoginPage />} />
+              <Route path="register" element={<Register />} />
+              <Route path="submit-success" element={<SubmitPage />} />
+              <Route path="*" element={<_Errorr_404 />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
       </FoodProvider>
     </>
   );
