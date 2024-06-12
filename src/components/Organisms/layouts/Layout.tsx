@@ -5,8 +5,11 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { TiShoppingCart } from "react-icons/ti";
 import Footer from "../../Templates/Footer";
 import { useFood } from "../../../context/FoodContext";
+import { IoIosLogOut } from "react-icons/io";
+import { useAuth } from "../../../context/AuthContext";
 
 const Layout: React.FC = () => {
+  const {logout, isAuthenticated} = useAuth();
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate();
@@ -99,14 +102,23 @@ const Layout: React.FC = () => {
             >
               Contact
             </button>
-            <button
+            {
+              isAuthenticated  ?   <button
+              className="hover:font-semibold hover:text-blue-400 transition-all duration-300 text-xl px-2 border-2 border-blue-600 py-1 rounded-xl"
+              onClick={logout}
+            >
+              <IoIosLogOut size={24} />
+            </button>:<button
               className={`${isActive(
                 "/login"
-              )} hover:font-semibold hover:text-blue-400 transition-all duration-300 text-xl`}
+              )} hover:font-semibold hover:text-blue-400 transition-all duration-300 text-xl px-2 border-2 border-blue-600 py-1 rounded-xl`}
               onClick={() => onClickLinkPage("/login")}
             >
               Login
-            </button>
+            </button> 
+            }
+           
+           
           </div>
           <div className="flex items-center gap-4">
             <button
@@ -175,7 +187,7 @@ const Layout: React.FC = () => {
           <button
             className={`${isActive(
               "/about"
-            )} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+            )} hover:font-semibold hover:text-white transition-all duration-300 text-xl bg-slate-800`}
             onClick={() => onClickLinkPage("/about")}
           >
             About
@@ -191,7 +203,7 @@ const Layout: React.FC = () => {
           <button
             className={`${isActive(
               "/login"
-            )} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+            )} hover:font-semibold hover:text-white transition-all duration-300 text-xl border-2`}
             onClick={() => onClickLinkPage("/login")}
           >
             Login
