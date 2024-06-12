@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/home/HomePage'
 import AboutPage from './pages/about/AboutPage'
 import Layout from './components/Organisms/layouts/Layout'
@@ -41,6 +41,8 @@ function App() {
           <Route path="food-more" element={<FoodMore/>} />
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<Register />} />
+          <Route path="submit-success" element={<SubmitPage/>}/>
+          <Route path="*" element={<_Errorr_404/>}/>
          </Route>
         </Routes>
       </BrowserRouter>
