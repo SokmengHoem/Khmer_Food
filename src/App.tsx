@@ -18,6 +18,8 @@ import FoodMore from './pages/food/subfood/FoodMore'
 import { drinks, foods, foodsKh, foodsNum } from './data/myData'
 import { FoodProvider } from './context/FoodContext'
 import { AuthProvider } from './context/AuthContext'
+import SubmitPage from './pages/submit/SubmitPage'
+import Errorr404 from './pages/error/404_error'
 
 function App() {
   return (
@@ -42,7 +44,7 @@ function App() {
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<Register />} />
           <Route path="submit-success" element={<SubmitPage/>}/>
-          <Route path="*" element={<_Errorr_404/>}/>
+          <Route path="*" element={<Errorr404/>}/>
          </Route>
         </Routes>
       </BrowserRouter>

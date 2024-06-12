@@ -1,4 +1,5 @@
 import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -15,9 +16,9 @@ export default function Footer() {
             placeholder="Sign up for our Newsletter!"
             className="w-full lg:w-96 text-[18px] bg-backGroundFooterColor border-2 rounded-full px-4 py-2 focus:outline-green-600 focus:border-green-600 mr-0 lg:mr-6 mb-4 lg:mb-0"
           />
-          <button className="bg-green-600 w-full lg:w-auto px-6 py-2 text-[18px] rounded-full font-medium">
+          <Link to="/submit-success" className="bg-green-600 w-full lg:w-auto px-6 py-2 text-[18px] rounded-full font-medium">
             Submit
-          </button>
+          </Link>
         </div>
         <div className="font-semibold flex flex-col lg:flex-row items-start lg:items-center gap-6 mt-10 lg:mt-14">
           <p>Contact Us</p>

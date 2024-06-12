@@ -1,6 +1,6 @@
 import { NotFoundPage } from "../../components/Molecules/not_found/NotFoundPage";
 
-const _Errorr_404 = () =>{
+const Errorr404 = () =>{
     return (
         <div>
             <NotFoundPage/>
@@ -8,4 +8,4 @@ const _Errorr_404 = () =>{
     );
 }
 
-export default _Errorr_404;
+export default Errorr404;
