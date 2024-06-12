@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { FaAngleDown, FaAngleUp } from 'react-icons/fa6';
+
 const faqs = [
   {
     question: "Where are your products made?",
@@ -20,9 +20,7 @@ const faqs = [
   },
 ];
 
-
-type Props = {}
-const FAQPage = (props: Props) => {
+const FAQPage = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
@@ -49,10 +47,7 @@ const FAQPage = (props: Props) => {
                 className="w-full text-left p-4 bg-gray-100 rounded-lg  flex justify-between items-center"
               >
                 <span>{faq.question}</span>
-                <FontAwesomeIcon
-                  icon={openIndex === index ? faAngleUp : faAngleDown}
-                  className={`transition-transform duration-300 ${openIndex === index ? 'rotate-180' : 'rotate-0'}`}
-                />
+                {openIndex === index ? <FaAngleUp className="transition-transform duration-300 rotate-180" /> : <FaAngleDown className="transition-transform duration-300 rotate-0" />}
               </button>
               {openIndex === index && (
                 <div className="mt-2 p-4 bg-white border border-gray-200 rounded-lg">
@@ -64,12 +59,7 @@ const FAQPage = (props: Props) => {
         </div>
       </section>
     </div>
-  )
-}
-export default FAQPage
+  );
+};
 
-
-
-
-
-
+export default FAQPage;
