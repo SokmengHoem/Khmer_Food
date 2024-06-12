@@ -17,6 +17,7 @@ import FoodDrink from './pages/food/subfood/FoodDrink'
 import FoodMore from './pages/food/subfood/FoodMore'
 import { drinks, foods, foodsKh, foodsNum } from './data/myData'
 import { FoodProvider } from './context/FoodContext'
+import { AuthProvider } from './context/AuthContext'
 
 function App() {
   return (
