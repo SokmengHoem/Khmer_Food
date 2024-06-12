@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useFood } from '../../../context/FoodContext';
 
 const FoodItem: React.FC = () => {
-    const {viewFood} = useFood();
+    // call from context api
+    const {viewFood} = useFood();       // 
     const [number, setNumber] = useState(0)
     const [click, setClick] = useState(false)
     const onClicked = () => {
@@ -20,11 +21,12 @@ const FoodItem: React.FC = () => {
             setNumber(number - 1)
         }
     }
+    // console.log("Food Item",viewFood)        // use for console data in browser
     return (
         <div className=" w-[90%] h-auto mx-auto  p-6 rounded-lg  flex items-center space-x-60">
             <div className="ml-12 bg-gray-300 w-80 h-80 rounded-2xl flex items-center justify-center duration-300 ease-in-out hover:bg-slate-700">
                 <img
-                    src={viewFood.image}
+                    src={viewFood?.image || ''}
                     alt="Food"
                     className="rounded-full w-64 h-64 shadow-2xl shadow-gray-600 object-cover items-center duration-300 ease-in-out hover:scale-110 hover:rotate-3"
                 /> 

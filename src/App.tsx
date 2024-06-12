@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/home/HomePage'
 import AboutPage from './pages/about/AboutPage'
 import Layout from './components/Organisms/layouts/Layout'
@@ -17,10 +17,13 @@ import FoodDrink from './pages/food/subfood/FoodDrink'
 import FoodMore from './pages/food/subfood/FoodMore'
 import { drinks, foods, foodsKh, foodsNum } from './data/myData'
 import { FoodProvider } from './context/FoodContext'
+import { AuthProvider } from './context/AuthContext'
+import SubmitPage from './pages/submit/SubmitPage'
+import Errorr404 from './pages/error/404_error'
 
 function App() {
   return (
-    <>
+    <AuthProvider>
       <FoodProvider>
       <BrowserRouter>
         <Routes>
@@ -40,11 +43,13 @@ function App() {
           <Route path="food-more" element={<FoodMore/>} />
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<Register />} />
+          <Route path="submit-success" element={<SubmitPage/>}/>
+          <Route path="*" element={<Errorr404/>}/>
          </Route>
         </Routes>
       </BrowserRouter>
       </FoodProvider>
-    </>
+    </AuthProvider>
   );
 }
 
