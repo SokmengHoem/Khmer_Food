@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { CgChevronLeft, CgChevronRight } from 'react-icons/cg';
 
 interface Props {

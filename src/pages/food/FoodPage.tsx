@@ -4,18 +4,17 @@ import CartFood, { FoodItemType } from "../../components/Organisms/card/CartFood
 import NavLink from "../../components/Organisms/layouts/NavLink";
 import OrderSection from "../../components/Templates/Order";
 import Button from "../../components/atoms/Button";
+import { useFood } from "../../context/FoodContext";
 
-interface FoodTypeProps {
-  foods: FoodItemType[],
-}
 
-const FoodPage = ({ foods}: FoodTypeProps) => {
+const FoodPage = () => {
+  const {foodD} = useFood();
   const [data, setData] = useState<FoodItemType[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [num, setNum] = useState<number>(0);
 
   const handleFilter = () => {
-    let filtered = foods;
+    let filtered = foodD;
     if (searchTerm !== "") {
       filtered = filtered.filter((item) =>
         item.name.toLowerCase().includes(searchTerm.toLowerCase())

@@ -1,24 +1,5 @@
 import React from 'react';
 
-const features = [
-    {
-        imgSrc: '/images/aboutPage/icon1.png', // Make sure this path is correct
-        text: 'No High Fructose Corn Syrup',
-    },
-    {
-        imgSrc: '/images/aboutPage/icon2.png', // Provide the correct image path
-        text: 'No Artificial Flavors, Colors or Preservatives',
-    },
-    {
-        imgSrc: '/images/aboutPage/icon3.png', // Provide the correct image path
-        text: 'Gluten Free',
-    },
-    {
-        imgSrc: '/images/aboutPage/icon4.png', // Provide the correct image path
-        text: 'Non GMO',
-    },
-];
-
 const OnlyTheGoodStuff: React.FC = () => {
     return (
         <div className="text-center py-12 bg-white">
