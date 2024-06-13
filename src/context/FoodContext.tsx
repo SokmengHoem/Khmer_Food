@@ -3,6 +3,7 @@ import { FoodItemType } from '../components/Organisms/card/CartFood';
 import { foods } from '../data/myData';
 
 interface FoodContextType {
+    foodD: FoodItemType[],
     viewFood:any,
     numFav: number,
     numCart: number,
@@ -55,7 +56,7 @@ export const FoodProvider: React.FC<{ children: React.ReactNode }> = ({ children
     };
     
     return (
-        <FoodContext.Provider value={{ viewFood, addToCart, numCart, numFav, addToFav, handleViewFood, addFoodCart, removeFoodCart, addFoodFav, removeFoodFav }}>
+        <FoodContext.Provider value={{ foodD, viewFood, addToCart, numCart, numFav, addToFav, handleViewFood, addFoodCart, removeFoodCart, addFoodFav, removeFoodFav }}>
             {children}
         </FoodContext.Provider>
     );
