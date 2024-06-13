@@ -179,7 +179,7 @@ const Layout: React.FC = () => {
           <button
             className={`${isActive(
               "/food"
-            )} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+            )} hover:font-semibold hover:text-white transition-all duration-300 text-xl `}
             onClick={() => onClickLinkPage("/food")}
           >
             Foods
@@ -187,7 +187,7 @@ const Layout: React.FC = () => {
           <button
             className={`${isActive(
               "/about"
-            )} hover:font-semibold hover:text-white transition-all duration-300 text-xl bg-slate-800`}
+            )} hover:font-semibold hover:text-white transition-all duration-300 text-xl `}
             onClick={() => onClickLinkPage("/about")}
           >
             About
@@ -195,7 +195,7 @@ const Layout: React.FC = () => {
           <button
             className={`${isActive(
               "/contact"
-            )} hover:font-semibold hover:text-white transition-all duration-300 text-xl`}
+            )} hover:font-semibold hover:text-white transition-all duration-300 text-xl `}
             onClick={() => onClickLinkPage("/contact")}
           >
             Contact
@@ -203,7 +203,7 @@ const Layout: React.FC = () => {
           <button
             className={`${isActive(
               "/login"
-            )} hover:font-semibold hover:text-white transition-all duration-300 text-xl border-2`}
+            )} hover:font-semibold hover:text-white transition-all  duration-300 text-xl border-black px-4 py-2 rounded-xl border-2`}
             onClick={() => onClickLinkPage("/login")}
           >
             Login
