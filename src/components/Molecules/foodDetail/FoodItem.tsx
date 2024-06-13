@@ -34,7 +34,7 @@ const FoodItem: React.FC = () => {
             </div>
             <div>
                 <h2 className="text-4xl font-bold">{viewFood.name}</h2>
-                <p className="text-2xl text-orange-600 mt-2">{viewFood.price}</p>
+                <p className="text-2xl text-orange-600 mt-2">${viewFood.price}</p>
                 <p className="text-gray-700 mt-2 text-2xl">
                     {viewFood.description}
                 </p>

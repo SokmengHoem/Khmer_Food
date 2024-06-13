@@ -15,7 +15,7 @@ import FoodKhmer from './pages/food/subfood/FoodKhmer'
 import FoodNum from './pages/food/subfood/FoodNum'
 import FoodDrink from './pages/food/subfood/FoodDrink'
 import FoodMore from './pages/food/subfood/FoodMore'
-import { drinks, foods, foodsKh, foodsNum } from './data/myData'
+import { drinks, foodsKh, foodsNum } from './data/myData'
 import { FoodProvider } from './context/FoodContext'
 import { AuthProvider } from './context/AuthContext'
 import SubmitPage from './pages/submit/SubmitPage'
@@ -29,7 +29,7 @@ function App() {
         <Routes>
          <Route path="/" element={<Layout/>}>
           <Route path="" element={<HomePage />} />
-          <Route path="food" element={<FoodPage foods={foods}/>}/>
+          <Route path="food" element={<FoodPage/>}/>
           <Route path="food/:foodId" element={<FoodDetails/>} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
